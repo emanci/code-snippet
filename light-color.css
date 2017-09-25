@@ -1,0 +1,124 @@
+.prettyprint {
+    background: white;
+    font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.pln {
+    color: #4d4d4c;
+}
+
+@media screen {
+    .str {
+        color: #718c00;
+    }
+    .kwd {
+        color: #8959a8;
+    }
+    .com {
+        color: #8e908c;
+    }
+    .typ {
+        color: #4271ae;
+    }
+    .lit {
+        color: #f5871f;
+    }
+    .pun {
+        color: #4d4d4c;
+    }
+    .opn {
+        color: #4d4d4c;
+    }
+    .clo {
+        color: #4d4d4c;
+    }
+    .tag {
+        color: #c82829;
+    }
+    .atn {
+        color: #f5871f;
+    }
+    .atv {
+        color: #3e999f;
+    }
+    .dec {
+        color: #f5871f;
+    }
+    .var {
+        color: #c82829;
+    }
+    .fun {
+        color: #4271ae;
+    }
+}
+
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.code {
+    position: relative;
+    margin: 0 -20px 20px;
+    overflow: hidden;
+    padding-top: 38px;
+    background: #efefef;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 860px;
+    margin-left: 10px;
+}
+
+div.code[lang]::before {}
+
+div.code[lang]::after {
+    content: " ";
+    position: absolute;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #fc625d;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 20px;
+    margin-top: 13px;
+    -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+    box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+}
+
+div.code pre {
+    border: 1px solid #ededed;
+}
+
+div.code:hover .clipboard {
+    display: block;
+}
+
+pre.prettyprint.php {
+    margin-top: 0px;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+    list-style-type: decimal !important;
+}
+
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+    background-color: white;
+}
