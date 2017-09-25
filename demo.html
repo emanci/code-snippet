@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>代码高亮使用</title>
+    <meta charset="utf-8">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" type="text/css" href="./light-color.css">
+</head>
+
+<body>
+    <div class="CodeSnippet">
+        <div class="panel">
+            <div class="code" lang="PHP">
+                <pre class="prettyprint php linenums">
+        namespace App\Http\Controllers;
+
+        use Illuminate\Http\Request;
+        use App\Http\Controllers\Controller;
+
+        class PostController extends Controller
+        {
+            /**
+             * 显示创建博客文章的表单。
+             *
+             * @return Response
+             */
+            public function create()
+            {
+                return view('post.create');
+            }
+
+            /**
+             * 保存一个新的博客文章。
+             *
+             * @param  Request  $request
+             * @return Response
+             */
+            public function store(Request $request)
+            {
+                // 验证以及保存博客文章...
+            }
+        }
+            </pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
